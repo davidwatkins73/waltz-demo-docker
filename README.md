@@ -1,10 +1,12 @@
-# Compose
+# Waltz Demo Instances with Docker
+
+## Using Docker Compose
 
 This repository has a simple docker compose configuration for
 building and deploying a (pre-built) Waltz image and connecting
 it to a pre-populated sample database.
 
-## Quick start
+### Quick start
 
 Create a directory and create new file called `docker-compose.yml`, it's contents 
 should look like:
@@ -34,7 +36,7 @@ networks:
 
 ```
 
-# Links
+## Using Links
 
 Something similar can be achieved with simple links:
 

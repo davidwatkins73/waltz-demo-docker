@@ -1,1 +1,7 @@
 .logs
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/vcs.xml
+/.idea/libraries/waltz.xml
+/.idea/waltz-demo-docker.iml
+/.idea/workspace.xml
