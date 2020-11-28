@@ -4,7 +4,7 @@ ENV POSTGRES_USER=waltz \
     POSTGRES_PASSWORD=waltz \
     POSTGRES_DB=waltz
 
-COPY dump.sql /docker-entrypoint-initdb.d/
+ADD dump.1.29.postgres.tar.gz /docker-entrypoint-initdb.d/
 
 EXPOSE 5432
  

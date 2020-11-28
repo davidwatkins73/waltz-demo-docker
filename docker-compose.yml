@@ -3,7 +3,7 @@ services:
   postgres: 
     build:
       context: ./waltz-sample-db
-    image: davidwatkins73/waltz-sample-db
+    image: davidwatkins73/waltz-sample-db:1.29
     ports: 
       - "5632:5432"
     networks:
@@ -12,7 +12,7 @@ services:
   web:
     build:
       context: ./waltz-web
-    image: davidwatkins73/waltz-web
+    image: davidwatkins73/waltz-web:1.29-a1
     ports:
       - "80:8443"
     depends_on: 
