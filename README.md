@@ -12,18 +12,21 @@ Create a directory and create new file called `docker-compose.yml`, it's content
 should look like:
 
 ```
-
 version: '3'
 services:
   postgres: 
-    image: davidwatkins73/waltz-sample-db
+    build:
+      context: ./waltz-sample-db
+    image: davidwatkins73/waltz-sample-db:1.29
     ports: 
       - "5632:5432"
     networks:
       - waltz-network
 
   web:
-    image: davidwatkins73/waltz-web
+    build:
+      context: ./waltz-web
+    image: davidwatkins73/waltz-web:1.29-a1
     ports:
       - "80:8443"
     depends_on: 
@@ -33,7 +36,6 @@ services:
 
 networks:
   waltz-network:
-
 ```
 
 ## Using Links
