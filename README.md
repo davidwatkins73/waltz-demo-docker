@@ -15,8 +15,6 @@ should look like:
 version: '3'
 services:
   postgres: 
-    build:
-      context: ./waltz-sample-db
     image: davidwatkins73/waltz-sample-db:1.29
     ports: 
       - "5632:5432"
@@ -24,8 +22,6 @@ services:
       - waltz-network
 
   web:
-    build:
-      context: ./waltz-web
     image: davidwatkins73/waltz-web:1.29-a1
     ports:
       - "80:8443"
