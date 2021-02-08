@@ -5,3 +5,5 @@
 /.idea/libraries/waltz.xml
 /.idea/waltz-demo-docker.iml
 /.idea/workspace.xml
+/waltz-web/waltz.jar
+/waltz-sample-db/dump.sql
