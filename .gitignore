@@ -7,3 +7,8 @@
 /.idea/workspace.xml
 /waltz-web/waltz.jar
 /waltz-sample-db/dump.sql
+.idea/codeStyles/
+.idea/dataSources.local.xml
+.idea/dataSources.xml
+.idea/dataSources/
+.idea/shelf/
